@@ -1,0 +1,238 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: #f4f1f8;
+}
+.container{
+    width: min(1200px,100%);
+    margin:auto;
+}
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #ffffff;
+    backdrop-filter: blur(5px);
+    z-index: 99999;
+    padding-bottom: .625rem;
+    border-bottom:2px solid #1234;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .625rem;
+}
+h1{
+    font-family: "Changa",sans-serif;;
+    font-size: 2.8rem;
+    
+}
+ul{
+    list-style: none;
+}
+ul li{
+    display: inline-block;
+    margin-left: 30px;
+}
+ul li a{
+    text-decoration: none;
+    display: inline-block;
+    padding:.625rem 1.25rem;
+    font-family: "Changa", sans-serif;;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color:#000000;
+}
+ul li a:hover{
+    color: #676b6e;
+}
+.info{
+    padding: .625rem 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    position: relative;
+}
+.info a i{
+    font-size: 2rem;
+}
+.info-btn{
+    display: inline-block;
+    padding: .625rem .9375rem;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #000000;
+    background: #eee23d;
+    transition: .7s ease;
+}
+.info-btn:hover{
+    transform: translateY(5px);
+}
+.info .icon span{
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #9e0d14;
+    color: white;
+    position: absolute;
+    top:3px;
+    right: 26px;
+}
+/* ==================================================================== */
+
+.hero{
+    height: 85vh;
+    padding-top:11.25rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 30px;
+}
+.text-hero{
+    width: 50%;
+    padding: 1.875rem 1.25rem;
+}
+h2{
+    font-size: 1.8rem;
+    margin-bottom: 1.25rem;
+    font-family: "Changa",sans-serif;;
+    & span{
+        padding-top: .25rem;
+        display: block;
+        font-size: 2.5rem;
+        color: #ea9216;
+        text-indent: 120px;
+    }
+}
+.desc{
+    font-size: 1.3rem;
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    width: 400px;
+    line-height: 1.6;
+    margin-bottom: 1.80rem;
+}
+.hero-inp{
+    position: relative;
+}
+.hero-inp input{
+    width: 75%;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 18px;
+    background: #eeeeee;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+    color: #000000;
+    font-size: 1.3rem;
+}
+
+.hero-inp i{
+    position: absolute;
+    top: 20px;
+    right: 1px;
+}
+.hero-inp a{
+    position: absolute;
+    top: 0;
+    left: 125px;
+    background: #eee23d;
+    color: #000;
+    display:inline-block;
+    padding: 15px 20px;
+    border-radius: 18px;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+.hreo-image{
+    width: 50%;
+    overflow: hidden;
+    border: 2px solid #f4f1f8;
+}
+.hreo-image img{
+    width: 100%;
+    transition: .3s ease;
+}
+.hreo-image:hover img{
+    transform: scale(1.3) rotate(-5deg);
+}
+
+/* ==================================================== */
+@media (max-width:578px){
+.container{
+    width: 100%;
+}
+
+nav{
+    flex-direction: column;
+    gap: .625rem;
+}
+ul li a{
+    padding: 0 .9375rem;
+}
+.info-btn{
+    padding: .5rem .9375rem;
+}
+/*  */
+.hero{
+    height: 100vh;
+    padding-top: 220px;
+    flex-direction: column;
+    gap: 10px;
+}
+.text-hero{
+    width: 100%;
+    padding: 20px;
+}
+.desc{
+    width: 100%;
+}
+.hero-inp input{
+    width: 100%;
+}
+.hero-inp a{
+    left:0;
+}
+.hreo-image{
+    width: 100%;
+    padding-bottom: 30px;
+} 
+}
+/*  */
+ @media (min-width:578px) and (max-width:768px){
+    .container{
+        width: 100%;
+    }
+    .hero{
+        height: 100vh;
+        flex-direction: column;
+        padding-top: 140px;
+        gap: 10px;
+    }
+    .text-hero{
+        width: 100%;
+        flex: 1;
+    }
+    .desc{
+        width: 600px;
+    }
+    .hero-inp{
+        text-align: center;
+    }
+    .hero-inp i{
+        right: 100px;
+    }
+    .hero-inp a{
+        left: 96px;
+    }
+    .hreo-image{
+        width: 100%;
+        flex: 1;
+    }
+}
