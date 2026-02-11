@@ -141,7 +141,7 @@ h2{
 .hero-inp a{
     position: absolute;
     top: 0;
-    left: 191px;
+    left: 150px;
     background: #eee23d;
     color: #000;
     display:inline-block;
@@ -181,15 +181,18 @@ h3{
 /* =======================card menu==================================== */
 .card-menu{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     gap: 1.25rem;
     padding: 20px;
 }
 .menu .card{
-    box-shadow: 0 12px 24px rgb(10, 10, 8);
+    box-shadow: 0 2px 15px rgba(10, 10, 8, 0.212);
     border-radius: 8px;
     overflow: hidden;
-
+}
+.menu .card:hover{
+    box-shadow: 0 8px 18px rgb(10, 10, 8);
+    transform: translateY(-5px);
 }
 .card img{
     width: 100%;
