@@ -99,10 +99,14 @@
             <p>للإستفسار عن خدماتنا عن تلبيت الأفراح و المناسبات الخاصة يرجي التواصل عبر الوسائل أدناه</p>
             <div class="box-contact">
                 <form action="">
-                    <input type="text" name="name" placeholder="أكتب إسمك" required>
-                    <input type="tel" name="number" placeholder="رقم الموبايل" required>
-                    <input type="email" name="email" placeholder="البريد الإلكتروني" required>
-                    <textarea name="" id=""></textarea>
+                    <label for="name">الإسم</label>
+                    <input type="text" id="name" name="name" placeholder="أكتب إسمك" required>
+                    <label for="phone">رقم الهاتف</label>
+                    <input type="phone" id="phone" name="phone" placeholder="رقم الموبايل" required>
+                    <label for="email">البريد الإلكتروني</label>
+                    <input type="email" id="email" name="email" placeholder="البريد الإلكتروني" required>
+                    <label for="message">الرسالة</label>
+                    <textarea name="message" id="message"></textarea>
                     <button type="submit">إرسال</button>
                 </form>
                 <div class="info-contact">
@@ -110,6 +114,16 @@
                 </div>
             </div>
         </section> 
+        <!-- ================================================= -->
+         <section class="club">
+            <div class="club-info container">
+                <h5>انضم إلى نادي الذواقة</h5>
+                <p>أحصل علي عروض حصرية، ووصول مبكر إلي أصناف القائمة الجديدة،وخصم 15% علي طلبك الأول عند الإشتراك.</p>
+                <input type="email" name="email" placeholder="أدخل بريدك">
+                <button type="submit" value="submit">إشتراك</button>
+            </div>
+
+         </section>
     </main>
     
 </body>
